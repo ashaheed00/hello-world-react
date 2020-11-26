@@ -1,3 +1,3 @@
 # hello-world react app
 
-### UC2_UseOfDataBindings
+### UC3_PropertyBinding
