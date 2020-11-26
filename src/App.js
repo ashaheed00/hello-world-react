@@ -36,9 +36,9 @@ class App extends React.Component {
           </h1>
           <img src={logo} onClick={this.onClick} alt="The BridgeLabz"></img>
         </div>
-        <div>
-          Username: <input onChange={this.onNameChange}></input>
-          <span class="error-output" onChange={this.state.onNameChange}>
+        <div className="input-box">
+          <input className="input" onChange={this.onNameChange}></input>
+          <span className="error-output" onChange={this.state.onNameChange}>
             {this.state.nameError}
           </span>
         </div>

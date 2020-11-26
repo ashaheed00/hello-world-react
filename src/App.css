@@ -1,7 +1,3 @@
-div {
-  display: block;
-  /* align-items: center; */
-}
 h1 {
   text-align: center;
   font-size: xx-large;
@@ -12,6 +8,12 @@ img {
   margin: 0 auto;
   width: 15%;
   cursor: pointer;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .error-output {
