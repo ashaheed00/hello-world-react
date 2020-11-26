@@ -7,7 +7,6 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      title: "Hi ",
       userName: "Foo",
       nameError: "Eg. John",
     };
@@ -28,21 +27,42 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
-        <div>
-          <h1>
-            {this.state.title}
-            {this.state.userName}
-          </h1>
-          <img src={logo} onClick={this.onClick} alt="The BridgeLabz"></img>
+      <div className="app-main">
+        <div className="main">
+          <div>
+            <h1>Hi {this.state.userName}, Welcome to BridgeLabz</h1>
+            <img src={logo} onClick={this.onClick} alt="The BridgeLabz"></img>
+          </div>
+          <div className="input-box">
+            <input className="input" onChange={this.onNameChange}></input>
+            <span className="error-output" onChange={this.state.onNameChange}>
+              {this.state.nameError}
+            </span>
+          </div>
+          <p>
+            <b>We provide intense training on:</b>
+          </p>
+          <ul>
+            <li>Java Full Stack React</li>
+            <li>Java Full Stack Dot Net</li>
+            <li>Java Abridged</li>
+          </ul>
+          <br></br>
+          <p>We ensure individual growth.</p>
+          <br></br>
+          <p>
+            To know more about us visit:{" "}
+            <a href="https://www.bridgelabz.com" target="_blank">
+              Bridgelabz
+            </a>
+          </p>
+          <p>
+            <b>
+              <i>Employeebility to All</i>
+            </b>
+          </p>
         </div>
-        <div className="input-box">
-          <input className="input" onChange={this.onNameChange}></input>
-          <span className="error-output" onChange={this.state.onNameChange}>
-            {this.state.nameError}
-          </span>
-        </div>
-      </>
+      </div>
     );
   }
 }
